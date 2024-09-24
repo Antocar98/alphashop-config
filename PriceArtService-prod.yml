@@ -8,8 +8,6 @@ server:
   port: 507${seq}
  
 spring:
-  cache:
-    type: redis
   cloud:
 # ==============================================================
 # = Proprietà Kafka Bus
@@ -73,8 +71,8 @@ management:
 # ==============================================================
 info:
   assistenza:
-    nome: Nicola La Rocca
-    mail: nicola_larocca@xantrix.it
+    nome: Antonio Carnevale
+    mail: antonio.carnevale@cap4lab.com
     telefono: 334-12345678
     orario: 9-20
   nome:
