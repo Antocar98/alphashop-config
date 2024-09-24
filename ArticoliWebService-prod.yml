@@ -54,7 +54,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,metrics,customInfo,refresh
+        include: health,info,metrics
 # ==============================================================
 # = Actuator Info
 # ==============================================================
