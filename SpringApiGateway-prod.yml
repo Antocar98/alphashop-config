@@ -100,8 +100,8 @@ resilience4j:
 # = Parametri Sicurezza JWT 
 # ==============================================================
 sicurezza:
-    header: Authorization
-    secret: $123_Stella@xantrix.it
+  header: Authorization
+  secret: $aBcDeFgHiJkLmNoPqRsTuVwXyZ1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890
 
 # ==============================================================
 # = Proprietà Livello Log
