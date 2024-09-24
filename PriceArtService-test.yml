@@ -9,8 +9,6 @@ server:
   port: 507${seq}
  
 spring:
-  cache:
-    type: redis
   cloud:
 # ==============================================================
 # = Proprietà Kafka Bus
