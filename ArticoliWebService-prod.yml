@@ -29,7 +29,7 @@ spring:
       platform: postgres
   datasource:
     password: 123_Stella
-    url: jdbc:postgresql://localhost:5433/
+    url: jdbc:postgresql://localhost:5433/Alphashop
     username: postgres
   jpa:
     hibernate:
