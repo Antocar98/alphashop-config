@@ -26,31 +26,6 @@ spring:
     - ${KAFKA_ADDR:http://localhost:29092}
     client-id: ${spring.application.name}:${profilo}:507${seq}
 # ==============================================================
-# = Redis Parameters
-# ==============================================================
-  redis:
-    connect-timeout: 2s
-    host: localhost
-    #password: password
-    port: 6379
-    timeout: 1s
-# ==============================================================
-# = ZipKin parameters
-# ==============================================================
-  zipkin:
-    baseUrl: http://localhost:9411/
-    sender:
-      type: web
-     #type: rabbit  
-    message-timeout: 5
-# ==============================================================
-# = Sleuth parameters
-# ==============================================================
-  sleuth:
-    sampler:
-      probability: 1.0
-    traceId128: false
-# ==============================================================
 # = Proprietà Fonte Dati PostgreSQL
 # ==============================================================
   sql:
@@ -59,7 +34,7 @@ spring:
       platform: postgres
   datasource:
     password: 123_Stella
-    url: jdbc:postgresql://localhost:5433/Alphashop
+    url: jdbc:postgresql://localhost:5433/AlphaShop
     username: postgres
   jpa:
     hibernate:
@@ -76,14 +51,6 @@ logging:
     org:
      springframework:
       security: DEBUG
-# ==============================================================
-# = Parametri Sicurezza OAUTH2 con KeyCloack 
-# ==============================================================
-keycloak:
-  auth-server-url: http://localhost:8080/auth
-  realm: Alphashop
-  resource: PriceArtService
-  public-client: true 
 # ==============================================================
 # = Actuator Parameters
 # ==============================================================
@@ -111,5 +78,5 @@ info:
     telefono: 334-12345678
     orario: 9-20
   nome:
-    nome-app: PriceArt Web Service - Autenticazione OAUTH2 keycloak
+    nome-app: PriceArt Web Service
   profilo: GitHub
