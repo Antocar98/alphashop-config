@@ -1,12 +1,6 @@
 # ==============================================================
 # = Eureka Server - Profilo peer2
 # ==============================================================
-
-server:
-  port: 8762
-  tomcat:
-    max-threads: 5
-
 spring:
   application:
     name: EurekaServer
