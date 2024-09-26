@@ -5,21 +5,6 @@ server:
   port: 505${seq}
 
 spring:
-  cloud:
-# ==============================================================
-# = Proprietà Kafka Bus
-# ==============================================================
-    bus:
-      #id: ${spring.application.name}:${spring.cloud.profile}:${random.uuid}
-      enabled: true
-      refresh:
-        enabled: true
-      env:
-        enabled: true
-  kafka:
-    bootstrap-servers:
-    - ${KAFKA_ADDR:http://localhost:29092}
-    client-id: ${spring.application.name}:${profilo}:505${seq}
 #==========================================================
 #= PARAMETRI DBMS POSTGRESQL 
 #==========================================================
@@ -29,7 +14,7 @@ spring:
       platform: postgres
   datasource:
     password: 123_Stella
-    url: jdbc:postgresql://localhost:5433/AlphaShop
+    url: jdbc:postgresql://localhost:5433/Alphashop
     username: postgres
   jpa:
     hibernate:
@@ -54,20 +39,18 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,metrics,bus-refresh
+        include: health,info,metrics,customInfo
 # ==============================================================
 # = Actuator Info
 # ==============================================================
-
-
 info:
   assistenza:
-    nome: "Antonio Carnevale"
-    mail: "antonio.carnevale@cap4la.com"
+    nome: "Nicola La Rocca"
+    mail: "nicola_larocca@xantrix.it"
     telefono: "33412345678"
     orario: "9-20"
   nome:
-    nome-app: "Articoli Web Service"
+    nome-app: "Articoli Web Service - Autenticazione OAUTH2 keycloak"
 # ==============================================================
 # = Proprietà Livello Log
 # = Default ERROR, WARN e INFO 
@@ -97,6 +80,7 @@ logging:
       controller: INFO
       feign:
        PriceClient: DEBUG
+    
 # ==============================================================
 # = Parametri OpenFeign
 # ============================================================== 
