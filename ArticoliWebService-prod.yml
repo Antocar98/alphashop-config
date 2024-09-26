@@ -1,9 +1,6 @@
 #==========================================================
 #= Configurazione Articoli Web Service - Versione Produzione
 #==========================================================
-server:
-  port: 505${seq}
-
 spring:
 #==========================================================
 #= PARAMETRI DBMS POSTGRESQL 
