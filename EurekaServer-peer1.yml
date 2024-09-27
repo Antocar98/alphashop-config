@@ -1,6 +1,11 @@
 # ==============================================================
 # = Eureka Server - Profilo peer1
 # ==============================================================
+server:
+  port: 8761
+  tomcat:
+    max-threads: 5
+    
 spring:
   application:
     name: EurekaServer
