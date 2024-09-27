@@ -11,7 +11,7 @@ spring:
       platform: postgres
   datasource:
     password: 123_Stella
-    url: jdbc:postgresql://localhost:5433/Alphahop
+    url: jdbc:postgresql://localhost:5433/AlphaShop
     username: postgres
   jpa:
     hibernate:
