@@ -2,15 +2,6 @@
 # = SPRING API GATEWAY CON resilience4j - Versione Produzione
 # = AUTENTICAZIONE CENTEALIZZATA JWT
 # ==============================================================
-
-
-server:
-  port: 8765
-  netty:
-    connection-timeout: 2s
-    idle-timeout: 15s
-  shutdown: graceful
-
 spring:
    lifecycle:
     timeout-per-shutdown-phase: 15s
