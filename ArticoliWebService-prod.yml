@@ -2,6 +2,21 @@
 #= Configurazione Articoli Web Service - Versione Produzione
 #==========================================================
 spring:
+  cloud:
+# ==============================================================
+# = Proprietà Kafka Bus
+# ==============================================================
+    bus:
+      #id: ${spring.application.name}:${spring.cloud.profile}:${random.uuid}
+      enabled: true
+      refresh:
+        enabled: true
+      env:
+        enabled: true
+  kafka:
+    bootstrap-servers:
+       - ${KAFKA_ADDR:kafka:9092}
+    client-id: ${spring.application.name}:${profilo}:505${seq}
 #==========================================================
 #= PARAMETRI DBMS POSTGRESQL 
 #==========================================================
